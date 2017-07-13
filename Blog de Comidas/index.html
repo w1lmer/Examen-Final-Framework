@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width:device-width,user-scalable=no">
+        <title>Examen Final Foundation</title>
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <style>
+        body{
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+            /*background-position: center;*/
+        }
+        .contenido{
+             /* Navegadores que no soportan colores semitransparentes */
+                background: rgb(156, 130, 159) transparent;
+            /* Color semi-transparente */
+                background: rgba(156, 130, 159, 0.65);
+            /* Versiones antiguas de Internet Explorer */
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            /* Internet Explorer 8 o superior */
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; 
+        }
+        h1{
+            color: #FBFBFB;
+        }
+         h5{
+            color: #FBFBFB;
+            text-align: right;
+             font-style: italic;
+        }
+         h6{
+            color: #FBFBFB;
+            text-align: right;
+            font-style: italic;
+        }
+        h3,h4{
+            color: red;
+        }
+        .parrafo{
+            text-align: justify;
+        }
+        .comentario{
+            text-align: left;
+            color: darkblue;
+        }
+        .titulo{
+            text-align: left;
+        }
+        .lista{
+            list-style: none;
+        }
+      </style>
+    
+    <body>
+      <div class="row contenido">
+                <div class="small-12 columns small-order-3">
+                    <div class="row align-center">
+                        <div class="medium-3 columns text-center">
+                            <h6 class="titulo">Cocinando con: </h6>
+                            <h1>Doña<strong><em> INES</em></strong></h1>
+                            <h6>El blog de los Amantes de la</h6>
+                            <h5>Gastronomia</h5>
+                        </div>
+                        <hr width="95%"/>
+          
+                    </div>
+                </div>
+        <div class="  small-12 columns small-order-3">
+        <div class="row large-uncollapse">
+          <div class="large-5 medium-4 columns show-for-medium">
+            <div class=" callout">
+              <h4>Búsqueda Avanzada</h4>
+              <p class="show-for-sr">
+                A continuación hay un formulario para hacer búsquedas avanzadas.
+              </p>
+              <form>
+                <div class="row column">
+                  <label>Por nombre:
+                    <input type="text" name="name">
+                  </label>
+                </div>
+                <div class="row column">
+                  <label>Por referencia:
+                    <input type="text" name="name" aria-describedby="referencia-help">
+                  </label>
+                  <p class="help-text" id="referencia-help">Número único del producto</p>
+                </div>
+                <div class="row column">
+                  <label>Por categoría:
+                    <select>
+                      <option>Segundos</option>
+                      <option>Sopas</option>
+                      <option>Postres</option>
+                      <option>Reposteria</option>
+                      <option>Ensaladas</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="button-group stacked-for-small">
+                    <a href="#" class="hollow alert large expanded button">Inicio</a>
+                    <a href="#" class="hollow alert large expanded button">Mi plato Favorito</a>
+                    <a href="#" class="hollow alert large expanded button">Mis recetas</a>
+                </div>
+                
+                
+            <div class="row columns ">
+            <div class="callout">
+              <h3>Favoritos</h3>
+              <hr>
+              <div class="row large-uncollapse">
+                <div class="large-4 small-4 medium-4 columns">
+                  <div class="secondary callout text-center">
+                    <img src="img/arroz-con-leche.jpg" alt="Decoracion 1" class="thumbnail"/>  
+                  </div>
+                </div>
+                <div class="large-4 small-4 medium-4 columns">
+                  <div class="secondary callout text-center">
+                    <img src="img/Arroz.jpg" alt="Decoracion 1" class="thumbnail"/>
+                  </div>
+                </div>
+                <div class="large-4 small-4 medium-4 columns">
+                  <div class="secondary callout text-center">
+                    <img src="img/caldo.jpg" alt="Decoracion 1" class="thumbnail"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row large-uncollapse">
+                <div class="large-4 small-4 medium-4 columns">
+                  <div class="secondary callout text-center">
+                    <img src="img/ceviche.jpg" alt="Decoracion 1" class="thumbnail"/>
+                  </div>
+                </div>
+                <div class="large-4 small-4 medium-4 columns">
+                  <div class="secondary callout text-center">
+                    <img src="img/morada.jpg" alt="Decoracion 1" class="thumbnail"/>
+                  </div>
+                </div>
+                <div class="large-4 small-4  medium-4 columns">
+                  <div class="secondary callout text-center">
+                    <img src="img/pollo.jpg" alt="Decoracion 1" class="thumbnail"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row column">
+             <h4> Historial</h4>
+             <ul class="lista">
+                 <li> <a href="#">Sopa a la Minuta</a></li>
+                 <li> <a href="#">Lomo Saltado</a></li>
+                 <li> <a href="#">Arroz Zambito</a></li>
+                 <li> <a href="#">Cau Cau</a></li>
+                 <li> <a href="#">Guiso de Pollo</a></li>
+             </ul>
+              
+          </div>
+        </form>
+            </div>
+          </div>
+          <div class="large-7 columns">
+            <div class="callout">
+              <h4>Receta de helado de avellana</h4>
+              <div class="secondary callout text-center">
+                    <img src="img/Receta-de-helado-de-avellana.jpg" alt="Decoracion 1" class="thumbnail"/>
+                    <p class="parrafo"><strong>El helado de avellana es un postre de consumo ocasional</strong>, dado que cuenta con muchas calorías. No obstante es nutritivo, porque aporta vitamina, minerales, proteínas y azúcar. Este postre es fácil de digerir y se encuentra aconsejado para personas que cuentan con problemas para masticar o poseen estómagos delicados. Las avellanas tienen vitaminas como la <em>A, C, E </em>y del complejo B; también minerales como el fósforo, el calcio, el potasio, el magnesio y el manganeso, y grasas saludables. ¡Vamos a por la receta! </br>
+
+                    Quizás también te pueda interesar: <strong><em>Receta de sirope de café y de chocolate para helados, postres y batidos</em></strong></p>
+              </div>
+              <div>
+                    <h5 class="comentario">Escribe un comentario:</h5>
+                    <textarea name="comentarios"  cols="30" rows="3"></textarea>
+               </div> 
+                    <div class="row ">
+                         <div class="column large-2 small-2 medium-2 ">
+                              <img src="img/Dayana.jpg" alt="Decoracion 1" class="thumbnail"/>  
+                         </div>
+                           <div class="colum large-10 small-10 medium-10">
+                          <p><strong><em>Dayana:</em></strong> Me encanta tu pagina, siempre me gusto la cocina, espero tener mas experienbcias nuevas que compartir en tu pagina.... muy buen plato</p>
+                        </div>
+                        <div class="column large-2 small-2 medium-2 ">
+                              <img src="img/Mario.jpg" alt="Decoracion 1" class="thumbnail"/>  
+                         </div>
+                           <div class="colum large-10 small-10 medium-10">
+                          <p><strong><em>Mario:</em></strong> Buen plato me gustaria ver las recetas, te felicito mi estimada Ines sigue adelante es grato compartir la comida, un abrazo</p>
+                        </div>
+                    </div>
+              
+            
+              </div>
+              <div class="callout">
+              <h4>Lomo  Saltado</h4>
+              <div class="secondary callout text-center">
+                    <img src="img/lomo.jpg" alt="Decoracion 1" class="thumbnail"/>
+                  <p class="parrafo"><strong>El lomo saltado es una receta peruana.</strong> Para ser más precisos es un plato fusión que mezcla elementos de la comida china con la comida peruana.</br>
+
+                     Este plato típico peruano se realiza en un wok, con la técnica de salteado y lleva salsa de soja (China) y tiene entre sus ingredientes al ají amarillo (Perú). Además se hace con pimentón, tomate, cebolla, entre otros. Y se le acompaña con papas fritas. </br>
+
+                    El resultado es espectacular.
+                    El secreto del sabor increíble del lomo saltado en esta receta está en el vinagre.
+                    El secreto de la textura y la jugosidad tanto de la carne como de los vegetales está en la cocción a fuego muy alto por muy poco tiempo de cada uno de los ingredientes.</br>
+                    Es muy importante que no te distraigas mientras preparas este plato. Todo sucede muy rápido y cualquier falta de atención puede alterar por completo el resultado</p>
+              </div>
+              <div>
+                    <h5 class="comentario">Escribe un comentario:</h5>
+                    <textarea name="comentarios"  cols="30" rows="3"></textarea>
+               </div> 
+                    <div class="row ">
+                         <div class="column large-2 small-2 medium-2 ">
+                              <img src="img/Oscar.jpg" alt="Decoracion 1" class="thumbnail"/>  
+                         </div>
+                           <div class="colum large-10 small-10 medium-10">
+                          <p><strong><em>Oscar:</em></strong> Me encanta tu pagina, siempre me gusto la cocina, espero tener mas experienbcias nuevas que compartir en tu pagina.... muy buen plato</p>
+                        </div>
+                        <div class="column large-2 small-2 medium-2 ">
+                              <img src="img/linda.jpg" alt="Decoracion 1" class="thumbnail"/>  
+                         </div>
+                           <div class="colum large-10 small-10 medium-10">
+                          <p><strong><em>Linda:</em></strong> Buen plato me gustaria ver las recetas, te felicito mi estimada Ines sigue adelante es grato compartir la comida, un abrazo</p>
+                        </div>
+                    </div>
+              
+            
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    
+       </div>
+        
+        
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
